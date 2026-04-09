@@ -11,4 +11,10 @@ createUser(newUser);
 function createCourse() {
     return { name: "reactjs", price: 345 };
 }
+function PersonalInfo(infor) {
+    console.log('NAME: ${infor.name}' + 'Id: ${infor.id}' + "Email:" + infor.email);
+    console.log(`NAME: ${infor.name} Id: ${infor.id} Email: ${infor.email}`);
+    return { name: "", email: "", id: 2 };
+}
+PersonalInfo({ name: "Ahmed", email: "hyd@gmail.com", id: 30 });
 export {};

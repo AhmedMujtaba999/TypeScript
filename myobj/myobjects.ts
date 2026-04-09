@@ -18,7 +18,20 @@ function createCourse():{name: string, price:number}{
 }
 
 
+type info ={
+    name: string, 
+    email: string, 
+    id: number
+}
 
+function PersonalInfo(infor: info): info{
+    console.log('NAME: ${infor.name}' + 'Id: ${infor.id}' + "Email:" + infor.email);
+    console.log(`NAME: ${infor.name} Id: ${infor.id} Email: ${infor.email}`);
+    return {name:"", email: "", id: 2}
+
+}
+
+PersonalInfo({name: "Ahmed",email: "hyd@gmail.com", id: 30 })
 
 
 export{}
