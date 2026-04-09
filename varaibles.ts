@@ -12,5 +12,11 @@ userId.toFixed(2); // allowed toFixed is a method of number type variable
 
 let isLoggedIn: boolean= true;
 
+// type is Any // not a good practice to use any type as it defeats the purpose of using typescript
+let hero;
+function getHero(){
+    return "Superman";  
+}
+hero = getHero();
 
 export {}
