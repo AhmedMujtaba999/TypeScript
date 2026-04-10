@@ -12,7 +12,7 @@ let user2: {name: string, age: number} ={
 
 //with type alias
 
-type User ={ name : string, age: number};
+type User ={ name : string, age: number}; // kind of value
 
 let user3: User ={
     name : "Sara",
