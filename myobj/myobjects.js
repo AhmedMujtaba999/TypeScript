@@ -1,20 +1,14 @@
-const User = {
-    name: "Ahmed",
-    email: "ahmed@gmail.com",
-    isActive: true
+"use strict";
+// const User={
+//     name: "Ahmed",
+//     email: "ahmed@gmail.com",
+//     isActive: true                        
+// }  
+let myUser = {
+    _id: "123",
+    name: "ahme",
+    email: "hum@gmail.com",
+    isActive: false
 };
-function createUser({ name, isPaid }) { }
-// bad beahviour of js
-let newUser = { name: "ahmed", isPaid: false, email: "higy@.com" };
-//createUser({name: "hi", isPaid: true, email: "hi@com"})
-createUser(newUser);
-function createCourse() {
-    return { name: "reactjs", price: 345 };
-}
-function PersonalInfo(infor) {
-    console.log('NAME: ${infor.name}' + 'Id: ${infor.id}' + "Email:" + infor.email);
-    console.log(`NAME: ${infor.name} Id: ${infor.id} Email: ${infor.email}`);
-    return { name: "", email: "", id: 2 };
-}
-PersonalInfo({ name: "Ahmed", email: "hyd@gmail.com", id: 30 });
-export {};
+myUser.email = "ahmed@gmil.com";
+//myUser._id = "user"; not allowed as _id is marked as readonly
