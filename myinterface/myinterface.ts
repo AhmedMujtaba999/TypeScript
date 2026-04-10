@@ -13,10 +13,15 @@ interface Iuser{
     githubid: string
 }
 
-const ahmed: Iuser = {
+//use of extends and inheritance of Iuser props
+interface Admin extends Iuser{
+ role: "admin" |"ta"| "learber"// self made literal
+}
+const ahmed: Admin = {
     dbid: 345,
     email: "ahmed@.com",
     userid: 123,
+    role: "admin",
     githubid: "helllo",
     starttrail: () => { // writing function 
         return "trail started "
