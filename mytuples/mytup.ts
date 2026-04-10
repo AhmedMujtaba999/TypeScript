@@ -14,5 +14,7 @@ const newUser: User =[ 22, "example@goolgle.com"]
 newUser[1]= "helloworld" // manually u can chnage the value 
 
 // newUser.push(true) not possible in new versions
+// let ahmed : number;
+// let USERR: number| string = 44;
 
 export{}
