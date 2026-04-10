@@ -14,8 +14,8 @@ interface Iuser{
 }
 
 //use of extends and inheritance of Iuser props
-interface Admin extends Iuser{
- role: "admin" |"ta"| "learber"// self made literal
+interface Admin extends Iuser{ // by keeping , u can even call another interface
+ role: "admin" |"ta"| "learber"// self made literal value
 }
 const ahmed: Admin = {
     dbid: 345,
