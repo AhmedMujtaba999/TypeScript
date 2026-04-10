@@ -8,11 +8,16 @@ interface Iuser {
    starttrail?(): string, //method 2 this is actually good // optional fucntion 
    getcoupon(couponname: string, value : number ): number 
 }
+// same interface same as 1st one this is called re-opening of interface
+interface Iuser{
+    githubid: string
+}
 
 const ahmed: Iuser = {
     dbid: 345,
     email: "ahmed@.com",
     userid: 123,
+    githubid: "helllo",
     starttrail: () => { // writing function 
         return "trail started "
     },
