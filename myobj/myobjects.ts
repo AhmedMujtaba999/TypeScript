@@ -68,3 +68,5 @@ type cardDetails = cardNumber & cardDate & { // combing existing type and making
 
 myUser.email="ahmed@gmil.com";
 //myUser._id = "user"; not allowed as _id is marked as readonly
+
+export{}
