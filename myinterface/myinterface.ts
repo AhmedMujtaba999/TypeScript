@@ -14,6 +14,8 @@ interface Iuser{
 }
 
 //use of extends and inheritance of Iuser props
+
+//interface extends interface 
 interface Admin extends Iuser{ // by keeping , u can even call another interface
  role: "admin" |"ta"| "learber"// self made literal value
 }
