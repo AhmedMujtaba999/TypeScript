@@ -1,6 +1,7 @@
 class CUser{
 
     private _courseCount =1 
+    protected courseCnt=4
   public email : string =" we need to initilise this" // varaible 
   private id: number = 34 //varaible
   constructor( public gmail: string, public emailid: number){
@@ -30,6 +31,19 @@ class CUser{
       this._courseCount =courseNum
     }
 }
+
+class SubUser extends CUser{ //private access modifier cannot be accesed during extends
+
+  isFamily : boolean = true
+  changeCoursecount(){
+    //this._courseCount = 4 //Property '_courseCount' is private and only accessible within class 'CUser'.
+     this.courseCnt // this property can be accessed which extends CUser unlike private 
+     // protected modifier can be accessed with in the class and the class which extends it.
+
+  }
+
+}
+
 const ali = new CUser("hi", 667);
   
 
