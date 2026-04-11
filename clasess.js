@@ -1,7 +1,8 @@
-class cUser {
+class CUser {
     gmail;
     emailid;
     _courseCount = 1;
+    courseCnt = 4;
     email = " we need to initilise this"; // varaible 
     id = 34; //varaible
     constructor(gmail, emailid) {
@@ -14,7 +15,7 @@ class cUser {
     }
     //getter to get the value
     get getAppleEmail() {
-        return 'apple${this.email}';
+        return `apple${this.email}`;
     }
     // getter to get the coursecount private
     get courseCount() {
@@ -28,8 +29,16 @@ class cUser {
         this._courseCount = courseNum;
     }
 }
-const ali = new cUser("hi", 667);
-let value = ali.courseCount;
-ali.courseCount = 34;
+class SubUser extends CUser {
+    isFamily = true;
+    changeCoursecount() {
+        //this._courseCount = 4 //Property '_courseCount' is private and only accessible within class 'CUser'.
+        this.courseCnt; // this property can be accessed which extends CUser unlike private 
+        // protected modifier can be accessed with in the class and the class which extends it.
+    }
+}
+const ali = new CUser("hi", 667);
+let value = ali.courseCount; //getter 
+ali.courseCount = 34; //setter
 console.log(ali.getAppleEmail);
 export {};
