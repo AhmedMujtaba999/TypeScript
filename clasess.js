@@ -8,5 +8,7 @@ class cUser {
         this.gmail = gmail;
         this.emailid = emailid;
     }
+
+   
 }
 const ali = new cUser("hi", 667);
