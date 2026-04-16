@@ -27,3 +27,17 @@ interface boole{
     type: number}
 
     identityThree<boole>({brand: "hi", type: 78})// object paasing 
+
+    function getSearchProducts<T>(products: T[]): T{ 
+        // do some database oper
+        const myIndex = 3
+        return products[myIndex]
+
+    }
+
+    const getMoreSearchProducts = <T> (products: T[]): T =>{ // generics as datatype in arrow function 
+
+        const myIndex = 4
+        return products[myIndex]
+
+    }
