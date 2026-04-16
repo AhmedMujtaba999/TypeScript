@@ -71,7 +71,7 @@ interface Rectangle{
 }
 
 
-type Shape = Circle | Square
+type Shape = Circle | Square | Rectangle
 
 function getTrueshape(shape: Shape){
     if(shape.kind ==="circle"){
@@ -88,6 +88,8 @@ function getArea(shape: Shape) {
       return Math.PI * shape.radius ** 2;
     case "square":
       return shape.side ** 2;
+      case "rectangle":
+      return shape.length*shape.width
     default:
       const _defaultCheck: never = shape; // type never is never being used ...
       return _defaultCheck; // exhaustic check 
