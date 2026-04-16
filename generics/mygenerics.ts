@@ -41,3 +41,40 @@ interface boole{
         return products[myIndex]
 
     }
+
+
+    interface dabase{
+        connection: string,
+        username: string, 
+        pwd: string
+    }
+    function anfunc<T, U extends dabase >(val1: T, val2: U): object {
+        return {
+            val1, val2
+        }
+
+    }
+
+    //anfunc(3,"5")
+    anfunc(3, {connection: "hi", username: "ahmed", pwd: "hukm"})
+
+
+    interface Quiz{
+        name: string, 
+        type: string,
+
+    }
+
+    interface Course{
+        name: string, 
+        author: string, 
+        subject: string
+    }
+
+    class Sellable< Course> {
+        public cart: Course[] =[]
+        
+        addToCart(products: Course){
+            this.cart.push(products)
+        }
+    }
