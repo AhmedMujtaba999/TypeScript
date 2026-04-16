@@ -35,7 +35,7 @@ interface boole{
 
     }
 
-    const getMoreSearchProducts = <T> (products: T[]): T =>{ // generics as datatype in arrow function 
+    const getMoreSearchProducts = <T,> (products: T[]): T =>{ // generics as datatype in arrow function 
 
         const myIndex = 4
         return products[myIndex]
